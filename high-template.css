@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 90px;
+    margin: 0px 110px;
+    height: 160px;
+}
+
+header .logo img{
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+
+.links {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: gray;
+    cursor: pointer;
+}
+
+ul {
+    display: none;
+    background-color: rgba(128, 128, 128, 0.377);
+    list-style: none;
+    border-radius: 4px;
+    text-align: left;
+    margin-top: 170px;
+}
+
+ul li {
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.603) ;
+    color: black;
+    
+}
+
+ul li a:hover {
+    color: white;
+}
+
+.links:hover ul {
+    display: block;
+}
+
+.home {
+    width: 80%;
+    margin: auto;
+    background-image: url(images/mountain.jpg);
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.home-tit {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.des {
+    font-weight: bold;
+    letter-spacing: 1.8px;
+}
+
+.home-content {
+    width: 80%;
+    margin: 40px auto 40px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 25%;
+    height: 175px;
+    border: 2px solid rgba(136, 129, 129, 0.527);
+    box-shadow: 2px 2px 2px 2px gray;
+    padding: 5px;
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 28px;
+    color: rgba(0, 255, 191, 0.76);
+    margin-top: 5px;
+}
+
+.card-tit {
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.card-des {
+    word-spacing: 1.4px;
+}
+
+.services {
+    width: 80%;
+    margin: auto;
+}
+.ser-tit {
+text-align: center;
+padding-top: 20px;
+}
+
+.ser-tit div h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: gainsboro;
+}
+
+.ser-p {
+    margin-top: -65px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+.ser-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cat {
+    width: 220px;
+    height: 176px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 3px;
+    text-align: center;
+    padding: 6px;
+    border-top: 1px solid black;
+}
+
+#ic {
+    color: rgba(23, 235, 118, 0.836);
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.ser-img img {
+    position: relative;
+    width: 500px;
+    height: 360px;
+    margin-top: 16px;
+    margin-left: 9px;
+    border-radius: 4px;
+}
+
+.ser-img::after{
+    content:"";
+    position: absolute;
+    width: 60px;
+    height: 396px;
+    right: 120px;
+    background-color: black;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+.portfolio{
+    margin-top: 70px;
+}
+
+.por-tit{
+   text-align: center;
+   margin: 30px;
+}
+
+.h2 {
+    font-size: 70px;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.281);
+
+}
+
+.por-p {
+    margin-top: -18px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.por-cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+.port1 {
+    width: 30%;
+    height: 310px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    padding: 3px;
+}
+
+.port1 div img {
+    width: 100%;
+    height: 210px;
+}
+
+.head {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 6px 0px;
+    text-transform: capitalize;
+}
+
+.det {
+    color: gray;
+}
+
+.but {
+    text-align: center;
+    margin: 16px 0px;
+}
+
+.but button {
+    width: 110px;
+    height: 40px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img {
+    width: 50%;
+    margin-left: 70px;
+    
+}
+.about-img img {
+    width: 50%;
+    height: 230px;
+    border-radius: 3px;
+}
+
+
+.about-det {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px 0px;
+    margin-right: 10px;
+}
+
+.about-det div {
+    margin: 20px 0px;
+}
+
+.contact {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(220, 220, 220, 0.192);
+    border-radius: 13px;
+}
+
+.contac {
+    margin-top: 40px; 
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 11px;
+}
+
+
+.contac .first{
+    margin: 10px 0px ;
+    font-size: 30px;
+    color: darkcyan;
+    font-weight: bold;
+    letter-spacing: 1.9px;
+    text-transform: capitalize;
+}
+
+.contac .second {
+    margin-top: 5px ;
+    color: brown;
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.contac .thrd {
+    margin-top: 15px;
+    padding: 0px 10px;
+}
+
+.contac .thrd i {
+    font-size: 24px ;
+    margin: 0px 6px;
+}
+
+@media (min-width:400px) and (max-width:870px){
+    .home-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 40%;
+        height: 230px;
+        border: 2px solid rgba(136, 129, 129, 0.527);
+        box-shadow: 2px 2px 2px 2px gray;
+        padding: 5px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .ser-img::after{
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+
+    .por-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+    .port1 {
+        margin: auto;
+        text-align: center;
+        height: 400px;
+    }
+
+    .about-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .about-det {
+        margin-top: 50px;
+    }
+}
+
+
+
+
